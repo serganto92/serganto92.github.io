@@ -1,7 +1,9 @@
 $(function(){
 	
 	var win_h = $(window).width();
-	console.log(win_h);
+	console.log('Высота окна браузера' + win_h);
+	var doc_h = $(document).width();
+	console.log('Высота документа' + doc+h);
 
 	$('#data_activation_data').on('click',function(){
 		if ($(this).is(':checked')) {
