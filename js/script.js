@@ -1,5 +1,8 @@
 $(function(){
 	
+	var win_h = $(window).width();
+	console.log(win_h);
+
 	$('#data_activation_data').on('click',function(){
 		if ($(this).is(':checked')) {
 			$('#bottom_nav_item_al').show(200);
