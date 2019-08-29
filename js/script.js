@@ -69,4 +69,9 @@ $(function(){
 			$(this).text('Отобразить изменения');
 		}
 	});
+
+	$('.bottom_nav_item_al').on('click', function(){
+		$('main:visible').hide(50);
+		$('.2').show(50);
+	});
 });

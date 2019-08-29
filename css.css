@@ -277,6 +277,8 @@ input[type="text"]:focus {
 	height: 65px;
 	background-color: #a0a0a0;
 	margin-top: 40px;
+	position: absolute;
+	bottom: 0px;
 }
 
 .bottom_nav {
