@@ -1,9 +1,12 @@
 $(function(){
 	
 	var win_h = $(window).height();
-	console.log('Высота окна браузера' + win_h);
-	var doc_h = $(document).height();
-	console.log('Высота документа' + doc+h);
+	var html_h = $('html').height();
+	var scale = win_h / html_h;
+	console.log('Высота окна браузера ' + win_h);
+	var translate = (html_h - 5 - (html_h * scale)) / (scale * 2);
+
+	$('body').css('transform','scale('+scale+')' + 'translateY(' + '-' + translate + 'px)');
 
 	$('#data_activation_data').on('click',function(){
 		if ($(this).is(':checked')) {
