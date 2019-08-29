@@ -1,8 +1,8 @@
 $(function(){
 	
-	var win_h = $(window).width();
+	var win_h = $(window).height();
 	console.log('Высота окна браузера' + win_h);
-	var doc_h = $(document).width();
+	var doc_h = $(document).height();
 	console.log('Высота документа' + doc+h);
 
 	$('#data_activation_data').on('click',function(){
