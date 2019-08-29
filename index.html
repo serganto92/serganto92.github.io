@@ -8,145 +8,155 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div id="data_tposm_container_outline"></div>
+	<div class="data_tposm_container_outline"></div>
 	<header>
-		<div id="notifications">
-			<img id="notifications_sim" src="img/sim.png">
-			<img id="notifications_picture" src="img/picture.png">
-			<img id="notifications_secure" src="img/security.png">
+		<div class="notifications">
+			<img class="notifications_sim" src="img/sim.png">
+			<img class="notifications_picture" src="img/picture.png">
+			<img class="notifications_secure" src="img/security.png">
 		</div>
-		<div id="status">
-			<img id="status_volume" src="img/volume.png">
-			<img id="status_wifi" src="img/wifi.png">
-			<img id="status_gsm" src="img/gsm.png">
-			<span id="status_batteryp">57%</span>
-			<img id="status_batteryl" src="img/batteryl.png">
-			<span id="status_time">11:34</span>
+		<div class="service">
+			<div class="service_menu">
+				<span class="service_menu_title">Подсказки</span>
+			</div>
+			<ul class="service_nav">
+				<li>Отобразить изменения</li>
+				<li>Вторая подсказка</li>
+			</ul>
+		</div>
+		<div class="header_fake"></div>
+		<div class="status">
+			<img class="status_volume" src="img/volume.png">
+			<img class="status_wifi" src="img/wifi.png">
+			<img class="status_gsm" src="img/gsm.png">
+			<span class="status_batteryp">57%</span>
+			<img class="status_batteryl" src="img/batteryl.png">
+			<span class="status_time">11:34</span>
 		</div>
 	</header>
 	<main>
-		<div id="top">
-			<div id="top_column_left">
-				<img id="top_logo" src="img/logo.png">
+		<div class="top">
+			<div class="top_column_left">
+				<img class="top_logo" src="img/logo.png">
 			</div>
-			<div id="top_column_right">
-				<img id="top_copy" src="img/copy.png">
-				<button id="top_back"></button>
-				<button id="top_forward"></button>
+			<div class="top_column_right">
+				<img class="top_copy" src="img/copy.png">
+				<button class="top_back"></button>
+				<button class="top_forward"></button>
 			</div>
 		</div>
-		<div id="data">
-			<div id="data_pos">
-				<span id="data_pos_description">Работа с ТТ:</span>
-				<span id="data_pos_data">MS213216,Пятерочка :Красногорск, Павшинский бульвар...</span>
+		<div class="data">
+			<div class="data_pos">
+				<span class="data_pos_description">Работа с ТТ:</span>
+				<span class="data_pos_data">MS213216,Пятерочка :Красногорск, Павшинский бульвар...</span>
 			</div>
-			<div id="data_status">
-				<span id="data_status_description">Статус</span>
-				<select id="data_status_data">
+			<div class="data_status">
+				<span class="data_status_description">Статус</span>
+				<select class="data_status_data">
 					<option>Активна</option>
 					<option>Не активна</option>
 					<option>Временно закрыта</option>
 				</select>
 			</div>
-			<div id="data_counters">
-				<span id="data_counters_description">Количество касс</span>
-				<input type="text" name="counters" id="data_counters_data" value="5">
+			<div class="data_counters">
+				<span class="data_counters_description">Количество касс</span>
+				<input type="text" name="counters" class="data_counters_data" value="5">
 			</div>
-			<div id="data_matrix">
-				<span id="data_matrix_description">Полная матрица</span>
-				<input type="checkbox" name="matrix" id="data_matrix_data">
+			<div class="data_matrix">
+				<span class="data_matrix_description">Полная матрица</span>
+				<input type="checkbox" name="matrix" class="data_matrix_data">
 			</div>
-			<div id="data_backwall">
-				<span id="data_backwall_description">Шкаф</span>
-				<select id="data_backwall_data">
+			<div class="data_backwall">
+				<span class="data_backwall_description">Шкаф</span>
+				<select class="data_backwall_data">
 					<option selected="selected">0</option>
 					<option>1</option>
 					<option>2</option>
 				</select>
 			</div>
-			<div id="data_photoApprove">
-				<span id="data_photoApprove_description">Запрет на фото</span>
+			<div class="data_photoApprove">
+				<span class="data_photoApprove_description">Запрет на фото</span>
 				<input type="checkbox" name="photoApprove">
 			</div>
-			<div id="data_tposm">
-				<span id="data_tposm_description">TPOSM</span>
-				<input type="checkbox" name="tposm" id="data_tposm_data">
+			<div class="data_tposm">
+				<span class="data_tposm_description">TPOSM</span>
+				<input type="checkbox" name="tposm" class="data_tposm_data">
 			</div>
-			<div id="data_activation">
-				<span id="data_activation_description">Активация</span>
-				<input type="checkbox" name="activation" id="data_activation_data">
+			<div class="data_activation">
+				<span class="data_activation_description">Активация</span>
+				<input type="checkbox" name="activation" class="data_activation_data">
 			</div>
-			<div id="data_comment">
-				<span id="data_comment_description">Комментарий</span>
-				<input type="text" name="comment" id="data_comment_data">
+			<div class="data_comment">
+				<span class="data_comment_description">Комментарий</span>
+				<input type="text" name="comment" class="data_comment_data">
 			</div>
-			<span id="data_photo_description">Фотографии из визита</span>
-			<div id="data_photo_in">
-				<span id="data_photo_in_description">Внутренняя на входе</span>
-				<input type="file" name="photo_in" id="data_photo_in_file">
+			<span class="data_photo_description">Фотографии из визита</span>
+			<div class="data_photo_in">
+				<span class="data_photo_in_description">Внутренняя на входе</span>
+				<input type="file" name="photo_in" class="data_photo_in_file">
 			</div>
-			<div id="data_photo_out">
-				<span id="data_photo_out_description">Внутренняя на выходе</span>
-				<input type="file" name="photo_out" id="data_photo_out_file">
+			<div class="data_photo_out">
+				<span class="data_photo_out_description">Внутренняя на выходе</span>
+				<input type="file" name="photo_out" class="data_photo_out_file">
 			</div>
-			<div id="data_photo_order">
-				<span id="data_photo_order_description">Корректировка заказа</span>
-				<input type="file" name="photo_order" id="data_photo_order_file">
+			<div class="data_photo_order">
+				<span class="data_photo_order_description">Корректировка заказа</span>
+				<input type="file" name="photo_order" class="data_photo_order_file">
 			</div>
-			<div id="data_photo_audit">
-				<span id="data_photo_audit_description">Бланк аудита</span>
-				<input type="file" name="photo_audit" id="data_photo_audit_file">
+			<div class="data_photo_audit">
+				<span class="data_photo_audit_description">Бланк аудита</span>
+				<input type="file" name="photo_audit" class="data_photo_audit_file">
 			</div>
-			<div id="data_photo_device">
-				<span id="data_photo_device_description">Место хранения устройства</span>
-				<input type="file" name="photo_device" id="data_photo_device_file">
+			<div class="data_photo_device">
+				<span class="data_photo_device_description">Место хранения устройства</span>
+				<input type="file" name="photo_device" class="data_photo_device_file">
 			</div>
-			<div id="data_photo_error">
-				<span id="data_photo_error_description">Фото нарушения</span>
-				<input type="file" name="photo_error" id="data_photo_error_file">
+			<div class="data_photo_error">
+				<span class="data_photo_error_description">Фото нарушения</span>
+				<input type="file" name="photo_error" class="data_photo_error_file">
 			</div>
-			<div id="data_audit">
-				<span id="data_audit_description">Предыдущие нарушения контрактных условий торговой точкой</span>
+			<div class="data_audit">
+				<span class="data_audit_description">Предыдущие нарушения контрактных условий торговой точкой</span>
 			</div>
-			<div id="data_tposm_container">
-				<div id="data_tposm_container_items">
-					<div id="data_tposm_container_item">
+			<div class="data_tposm_container">
+				<div class="data_tposm_container_items">
+					<div class="data_tposm_container_item">
 						<img src="img/tposm1.png">
-						<div id="data_tposm_container_item_other">
+						<div class="data_tposm_container_item_other">
 							<span>Counter sticker</span>
 							<input type="text" name="tposm1" maxlength="2">
 						</div>
 					</div>
-					<div id="data_tposm_container_item">
+					<div class="data_tposm_container_item">
 						<img src="img/tposm2.png">
-						<div id="data_tposm_container_item_other">
+						<div class="data_tposm_container_item_other">
 							<span>Door sticker</span>
 							<input type="text" name="tposm2" maxlength="2">
 						</div>
 					</div>
-					<div id="data_tposm_container_item">
+					<div class="data_tposm_container_item">
 						<img src="img/tposm3.png">
-						<div id="data_tposm_container_item_other">
+						<div class="data_tposm_container_item_other">
 							<span>Insert CHOU</span>
 							<input type="text" name="tposm3" maxlength="2">
 						</div>
 					</div>
 				</div>
-				<div id="data_tposm_container_buttons">
-					<button id="data_tposm_container_button">Ок</button>
+				<div class="data_tposm_container_buttons">
+					<button class="data_tposm_container_button">Ок</button>
 				</div>
 			</div>
 		</div>
 	</main>
-	<footer id="bottom">
-		<nav id="bottom_nav">
-			<button id="bottom_nav_item_main">Общее</button>
-			<button id="bottom_nav_item_al">Activation Leader</button>
-			<button id="bottom_nav_item_matrix">Матрица</button>
-			<button id="bottom_nav_item_in">На входе</button>
-			<button id="bottom_nav_item_stock">Стоки</button>
-			<button id="bottom_nav_item_price">Цены</button>
-			<button id="bottom_nav_item_counters">На кассы</button>
+	<footer class="bottom">
+		<nav class="bottom_nav">
+			<button class="bottom_nav_item_main">Общее</button>
+			<button class="bottom_nav_item_al">Activation Leader</button>
+			<button class="bottom_nav_item_matrix">Матрица</button>
+			<button class="bottom_nav_item_in">На входе</button>
+			<button class="bottom_nav_item_stock">Стоки</button>
+			<button class="bottom_nav_item_price">Цены</button>
+			<button class="bottom_nav_item_counters">На кассы</button>
 		</nav>
 	</footer>
 </body>
