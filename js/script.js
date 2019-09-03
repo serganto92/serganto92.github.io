@@ -1,5 +1,7 @@
 $(function(){
 	
+	/* Масштабирование окна */
+
 	var win_h = $(window).height();
 	var html_h = $('html').height();
 	var scale = win_h / html_h;
@@ -7,6 +9,8 @@ $(function(){
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
 
 	$('body').css('transform','scale('+scale+')' + 'translateY(' + '-' + translate + 'px)');
+
+	/* Activation leader */
 
 	$('.data_activation_data').on('click',function(){
 		if ($(this).is(':checked')) {
@@ -16,6 +20,8 @@ $(function(){
 			$('.bottom_nav_item_al').hide(100);
 		}
 	});
+
+	/* TPOSM Call card */
 
 	$('.data_tposm_data').on('click',function(){
 		if ($(this).is(':checked')) {
@@ -45,6 +51,8 @@ $(function(){
 			}
 	});
 
+	/* Отображение изменений */
+
 	function ServiceNavShowControl () {
 		if ($('.service_nav').css('display') == 'none'){
 			$('.service_nav').show(200);
@@ -70,8 +78,67 @@ $(function(){
 		}
 	});
 
+	/* Переключение между листами */
+
 	$('.bottom_nav_item_al').on('click', function(){
-		$('main:visible').hide(50);
-		$('.2').show(50);
+		if ($('.second').css('display') == 'block') {
+			false
+		}
+		else {
+		$('.data:visible').hide(50);
+		$('.top_logo_title').html('Activation leader');
+		$('.second').show(50);
+		}
+	});
+
+	$('.bottom_nav_item_main').on('click', function(){
+		if ($('.first').css('display') == 'block') {
+			false
+		}
+		else {
+		$('.data:visible').hide(50);
+		$('.top_logo_title').html('Меню');
+		$('.first').show(50);
+		}
+	});
+
+	/* Список участников */
+
+	$('.second_data_member_table').not(':first').css('display','none');
+	$('.second_data_member_header_vision').not(':first').addClass('rotate');
+
+	$('.second_data_member_header_vision').on('click',function(){
+		$(this).toggleClass('rotate')
+		$(this).parent().next().slideToggle(300);
+	});
+
+	/* Добавить нового участника */
+
+	$('.second_data_member_header_add').on('click',function(){
+		if ($('.second_data_member_header_data_new').val() === '') {
+			false
+		}
+		else {
+			var name = $('.second_data_member_header_data_new').val();
+			$('.second_data_member').first().clone(true,true).prependTo('.members');
+			$('.second_data_member_table:not(:first)').css('display','none');
+			$('.second_data_member_header:first .second_data_member_header_data').html(name);
+			$('.second_data_member_header_vision:not(:first),.second_data_member_header_vision:not(:last)').addClass('rotate');
+			$('.second_data_member_header_vision:first').removeClass('rotate');
+			$('.second_data_member_header_data_new').val('');
+		}
+	});
+
+	/* Удаляем участника */
+
+	$('.second_data_member_header_delete').on('click',function(){
+		var n = $('.second_data_member').length;
+		console.log(n);
+		if (n > 2) {
+			$(this).parent().parent().remove();
+		}
+		else {
+			false
+		}
 	});
 });
