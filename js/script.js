@@ -5,7 +5,6 @@ $(function(){
 	var win_h = $(window).height();
 	var html_h = $('html').height();
 	var scale = win_h / html_h;
-	console.log('Высота окна браузера ' + win_h);
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
 
 	$('body').css('transform','scale('+scale+')' + 'translateY(' + '-' + translate + 'px)');
@@ -150,5 +149,73 @@ $(function(){
 		else {
 			false
 		}
+	});
+
+	/* Проверка отметок DTE */
+	
+	$('.availability').on('click',function(){
+		if ($(this).is(':checked') === false && $('.repair').is(':checked') && $('.charge').is('checked')) {
+			$('.charge').trigger('click').attr('disabled','disabled');
+			$('.repair').trigger('click').attr('disabled','disabled');
+		}
+		else if ($(this).is(':checked') === false && $('.repair').is(':checked') && ($('.charge').is('checked') === false)) {
+			$('.repair').trigger('click').attr('disabled','disabled');
+		}
+		else {
+			$('.repair').removeAttr('disabled');
+		}
+	});
+
+	$('.repair').on('click', function(){
+		if ($(this).is(':checked') && $('.charge').is(':checked') === false) {
+			$('.charge').removeAttr('disabled');
+		}
+		else if ($(this).is(':checked') === false && $('.charge').is(':checked')) {
+			$('.charge').trigger('click').attr('disabled','disabled');
+		}
+		else if ($(this).is(':checked') === false && $('.charge').is(':checked') === false) {
+			$('.charge').attr('disabled','disabled');
+		}
+		else {
+			console.log('Остальное');
+		}
+	});
+
+	/* Проверка отметок LAS */
+
+	$('.sale').on('click', function () {
+		if ($('.sale').is(':checked')) {
+			$(this).next('.dismiss').attr('disabled','disabled');
+		}
+		else {
+			$(this).next('.dismiss').removeAttr('disabled');
+		}
+	});
+
+	$('.dismiss').on('click', function () {
+		if ($('.dismiss').is(':checked')) {
+			$(this).prev('.sale').attr('disabled','disabled');
+		}
+		else {
+			$(this).prev('.sale').removeAttr('disabled');
+		}
+	});
+
+	/* Скрываем placeholder input */
+
+	$('.sr').on('focusin',function() {
+		$(this).removeAttr('placeholder');
+	});
+
+	$('.sr').on('focusout',function() {
+		$(this).attr('placeholder','Пред.месяц со скидкой');
+	});
+	
+	$('.fp').on('focusin',function() {
+		$(this).removeAttr('placeholder');
+	});
+
+	$('.fp').on('focusout',function() {
+		$(this).attr('placeholder','Пред.месяц без скидки');
 	});
 });
