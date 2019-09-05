@@ -154,11 +154,11 @@ $(function(){
 	/* Проверка отметок DTE */
 	
 	$('.availability').on('click',function(){
-		if ($(this).is(':checked') === false && $('.repair').is(':checked') && $('.charge').is('checked')) {
+		if ($(this).is(':checked') === false && $('.repair').is(':checked') && $('.charge').is(':checked')) {
 			$('.charge').trigger('click').attr('disabled','disabled');
 			$('.repair').trigger('click').attr('disabled','disabled');
 		}
-		else if ($(this).is(':checked') === false && $('.repair').is(':checked') && ($('.charge').is('checked') === false)) {
+		else if ($(this).is(':checked') === false && $('.repair').is(':checked') && ($('.charge').is(':checked') === false)) {
 			$('.repair').trigger('click').attr('disabled','disabled');
 		}
 		else {
