@@ -155,12 +155,15 @@
 				</div>
 				<span class="second_data_member_title">Участники</span>
 				<div class="members">
+				<div class="second_data_container">
 					<div class="second_data_member">
 					<div class="second_data_member_header">
 						<div class="second_data_member_header_description">ФИО Участника</div>
 						<div class="second_data_member_header_data">Карамова Антонина Викторовна</div>
-						<button class="second_data_member_header_delete"></button>
-						<button class="second_data_member_header_vision"></button>
+						<div class="button_container">
+							<button class="second_data_member_header_delete"></button>
+							<button class="second_data_member_header_vision"></button>
+						</div>
 					</div>
 					<div class="second_data_member_table">
 						<div class="second_data_member_table_header">
@@ -227,8 +230,10 @@
 					<div class="second_data_member_header">
 						<div class="second_data_member_header_description">ФИО Участника</div>
 						<div class="second_data_member_header_data">Панфилов Алексей Михайлович</div>
-						<button class="second_data_member_header_delete"></button>
-						<button class="second_data_member_header_vision"></button>
+						<div class="button_container">
+							<button class="second_data_member_header_delete"></button>
+							<button class="second_data_member_header_vision"></button>
+						</div>
 					</div>
 					<div class="second_data_member_table">
 						<div class="second_data_member_table_header">
@@ -291,71 +296,78 @@
 						</div>
 					</div>
 				</div>
-			<div class="second_data_dte">
-				<span class="second_data_dte_title">Оборудование DTE</span>
-				<div class="second_data_dte_data">
-					<div class="second_data_dte_item">
-						<span class="second_data_dte_item_availability">Наличие</span>
-						<input type="checkbox" name="availability" class="availability">
-					</div>
-					<div class="second_data_dte_item">
-						<span class="second_data_dte_item_availability">Исправность</span>
-						<input type="checkbox" name="repair" class="repair">
-					</div>
-					<div class="second_data_dte_item">
-						<span class="second_data_dte_item_availability">Зарядка</span>
-						<input type="checkbox" name="charge" class="charge">
-					</div>
-					<div class="second_data_dte_comment">
-						<input type="text" name="dte_comment">
-					</div>
-				</div>
-				<div class="second_data_las">
-					<div class="second_data_las_header">
-						<span class="second_data_las_header_item">Идентификатор</span>
-						<span class="second_data_las_header_item">SMS</span>
-						<span class="second_data_las_header_item">Sale</span>
-						<span class="second_data_las_header_item">Dismiss</span>
-						<span class="second_data_las_header_item">Комментарий</span>
-					</div>
-					<div class="second_data_las_row">
-						<input type="text" name="id" class="id">
-						<input type="checkbox" name="sms" class="sms">
-						<input type="checkbox" name="sale" class="sale">
-						<input type="checkbox" name="dismiss" class="dismiss">
-						<input type="text" name="las_comment">
-					</div>
-					<div class="second_data_las_row">
-						<input type="text" name="id" class="id">
-						<input type="checkbox" name="sms" class="sms">
-						<input type="checkbox" name="sale" class="sale">
-						<input type="checkbox" name="dismiss" class="dismiss">
-						<input type="text" name="las_comment">
-					</div>
-				</div>
-				<div class="second_data_offtake">
-					<div class="second_data_offtake_SR">
-						<span class="second_data_offtake_SR_span">KIT Off-take SR</span>
-						<input type="text" name="sr" class="sr">
-					</div>
-					<div class="second_data_offtake_FP">
-						<span class="second_data_offtake_FP_span">KIT Off-take FP</span>
-						<input type="text" name="sr" class="fp">
-					</div>
-				</div>
-				<div class="second_data_locator">
-					<span class="second_data_locator_title">Торговая точка отображена на карте</span>
-					<input type="checkbox" name="locator">
-					<span class="second_data_locator_description"></span>
-				</div>
-			</div>
-			</div>
-		<div class="second_data_member">
+				<div class="second_data_member_new">
 			<div class="second_data_member_header">
 				<div class="second_data_member_header_description new">Новый участник</div>
 				<input type="text" name="name_new" placeholder="ФИО Участника" class="second_data_member_header_data_new">
 				<button class="second_data_member_header_add"></button>
-			</div></div>
+			</div></div></div>
+			<div class="second_data_other">	
+				<span class="second_data_dte_title">Оборудование DTE</span>
+					<div class="second_data_dte_data">
+						<div class="second_data_dte_item">
+							<span class="second_data_dte_item_availability">Наличие</span>
+							<input type="checkbox" name="availability" class="availability">
+						</div>
+						<div class="second_data_dte_item">
+							<span class="second_data_dte_item_availability">Исправность</span>
+							<input type="checkbox" name="repair" class="repair">
+						</div>
+						<div class="second_data_dte_item">
+							<span class="second_data_dte_item_availability">Зарядка</span>
+							<input type="checkbox" name="charge" class="charge">
+						</div>
+						<div class="second_data_dte_comment">
+							<span class="second_data_dte_comment_description">Комментарий</span>
+							<input type="text" name="dte_comment" placeholder="Комментарий">
+						</div>
+				</div>
+				<div class="second_data_las">
+					<span class="second_data_las_title">Контакты с LAS</span>
+					<div class="second_data_las_container">
+						<div class="second_data_las_header">
+							<span class="second_data_las_header_item">Идентификатор</span>
+							<span class="second_data_las_header_item">SMS</span>
+							<span class="second_data_las_header_item">Sale</span>
+							<span class="second_data_las_header_item">Dismiss</span>
+							<span class="second_data_las_header_item">Комментарий</span>
+						</div>
+						<div class="second_data_las_row">
+							<input type="text" name="id" class="id">
+							<input type="checkbox" name="sms" class="sms">
+							<input type="checkbox" name="sale" class="sale">
+							<input type="checkbox" name="dismiss" class="dismiss">
+							<input type="text" name="las_comment">
+						</div>
+						<div class="second_data_las_row">
+							<input type="text" name="id" class="id">
+							<input type="checkbox" name="sms" class="sms">
+							<input type="checkbox" name="sale" class="sale">
+							<input type="checkbox" name="dismiss" class="dismiss">
+							<input type="text" name="las_comment">
+						</div>
+					</div>
+				</div>
+				<div class="second_data_offtake">
+					<span class="second_data_offtake_title">Off-take</span>
+					<div class="second_data_offtake_container">
+						<div class="second_data_offtake_SR">
+							<span class="second_data_offtake_SR_span">KIT Off-take SR</span>
+							<input type="text" name="sr" class="sr">
+						</div>
+						<div class="second_data_offtake_FP">
+							<span class="second_data_offtake_FP_span">KIT Off-take FP</span>
+							<input type="text" name="sr" class="fp">
+						</div>
+					</div>
+				</div>
+				<div class="second_data_locator">
+					<span class="second_data_locator_title">Торговая точка отображена на карте</span>
+					<span class="second_data_locator_description">https://www.iqos.ru/gde-kupit/</span>
+					<input type="checkbox" name="locator" id="locator_check">
+				</div>
+			</div>
+			</div>
 		</div>
 	</div>
 	</div>

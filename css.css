@@ -370,7 +370,8 @@ button[class^="bottom_nav_item"] {
 
 .second_data_pos {
 	margin-left: 20px;
-	margin-top: 10px;	
+	margin-top: 10px;
+	margin-bottom: 10px;	
 }
 
 .second_data_pos_description {
@@ -382,7 +383,7 @@ button[class^="bottom_nav_item"] {
 	font-size: 16px;
 }
 
-.second_data_member {
+.second_data_member,.second_data_member_new {
 	width: 768px;
 	margin: 10px auto 0;
 }
@@ -393,6 +394,74 @@ button[class^="bottom_nav_item"] {
 	margin-left: 20px;
 }
 
+.second_data_dte_title {
+	font-size: 24px;
+	font-style: italic;
+}
+
+.second_data_other {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 10px;
+}
+
+.second_data_dte_comment {
+	width: 100%;
+}
+
+.second_data_dte_comment_description {
+	margin-right: 20px;
+}
+
+.second_data_dte_comment input {
+	width: 200px;
+}
+
+.second_data_dte_data {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	flex-wrap: wrap;
+}
+
+.second_data_las {
+	margin-top: 10px;
+}
+
+.second_data_las_title {
+	font-size: 24px;
+	font-style: italic;
+}
+
+.second_data_las_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	min-height: 80px;
+	margin-top: 10px;
+}
+
+.second_data_las_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.second_data_las_header {
+	width: 100%;
+}
+
+div[class^="second_data_dte_item"] {
+	min-width: 28%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .second_data_member_header {
 	border: 2px solid black;
 	height: 55px;
@@ -401,6 +470,52 @@ button[class^="bottom_nav_item"] {
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 5px;
+}
+
+.second_data_las_header_item:first-of-type {
+	margin-left: 20px;
+}
+
+.second_data_las_header_item:nth-of-type(2) {
+	margin-left: 105px;
+}
+
+.second_data_las_header_item:nth-of-type(3) {
+	margin-left: 75px;
+}
+
+.second_data_las_header_item:nth-of-type(4) {
+	margin-left: 70px;
+}
+
+.second_data_las_header_item:last-of-type {
+	margin-left: 100px;
+}
+
+.second_data_offtake {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80px;
+}
+
+.second_data_offtake_title {
+	font-size: 24px;
+	font-style: italic;
+	min-width: 100%;
+}
+
+.second_data_offtake_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.second_data_offtake_SR_span,.second_data_offtake_FP_span{
+	margin-right: 20px;
 }
 
 .second_data_member_header_description {
@@ -525,3 +640,26 @@ div[class*="check"],div[class*="coach"] {
 div.second_data_member_header_description.new {
 	font-weight: normal;
 }
+
+.second_data_locator {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 70px;
+}
+
+.second_data_locator_title {
+	font-size: 24px;
+	font-style: italic;
+	min-width: 100%;
+	display: block;
+}
+
+#locator_check {
+	margin-left: 30px;
+	height: 20px;
+	width: 20px;
+}
+

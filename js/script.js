@@ -109,7 +109,7 @@ $(function(){
 
 	$('.second_data_member_header_vision').on('click',function(){
 		$(this).toggleClass('rotate')
-		$(this).parent().next().slideToggle(300);
+		$(this).parent().parent().next().slideToggle(300);
 	});
 
 	/* Добавить нового участника */
@@ -122,20 +122,30 @@ $(function(){
 			var name = $('.second_data_member_header_data_new').val();
 			$('.second_data_member').first().clone(true,true).prependTo('.members');
 			$('.second_data_member_table:not(:first)').css('display','none');
+			$('.second_data_member_header_vision:not(:first)').addClass('rotate');
 			$('.second_data_member_header:first .second_data_member_header_data').html(name);
-			$('.second_data_member_header_vision:not(:first),.second_data_member_header_vision:not(:last)').addClass('rotate');
-			$('.second_data_member_header_vision:first').removeClass('rotate');
 			$('.second_data_member_header_data_new').val('');
 		}
 	});
+
+	/* Контроль Rotate кнопки */
+
+	function vision () {
+		if ($('.second_data_member .second_data_member_table').css('display') === 'none'){
+			$(this).closest('.second_data_member_header_vision').toggleClass('rotate')
+		}
+		else {
+			false
+		}
+	}
 
 	/* Удаляем участника */
 
 	$('.second_data_member_header_delete').on('click',function(){
 		var n = $('.second_data_member').length;
 		console.log(n);
-		if (n > 2) {
-			$(this).parent().parent().remove();
+		if (n > 1) {
+			$(this).parent().parent().parent().remove();
 		}
 		else {
 			false
