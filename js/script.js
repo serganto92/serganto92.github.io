@@ -218,4 +218,5 @@ $(function(){
 	$('.fp').on('focusout',function() {
 		$(this).attr('placeholder','Пред.месяц без скидки');
 	});
+	
 });
