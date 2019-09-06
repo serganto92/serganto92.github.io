@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Вкладка общее</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/script.js"></script>
@@ -46,7 +47,7 @@
 				<button class="top_forward"></button>
 			</div>
 		</div>
-		<div class="data first">
+		<div class="data first" id="first">
 			<div class="data_pos">
 				<span class="data_pos_description">Работа с ТТ:</span>
 				<span class="data_pos_data">MS213216,Пятерочка :Красногорск, Павшинский бульвар...</span>
@@ -148,7 +149,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="data second">
+		<div class="data second" id="second">
 				<div class="second_data_pos">
 					<span class="second_data_pos_description">MS213216, Пятерочка</span>
 					<span class="second_data_pos_data">Красногорск, Павшинский бульвар д.20</span>
@@ -364,7 +365,7 @@
 				</div>
 				<div class="second_data_locator">
 					<span class="second_data_locator_title">Торговая точка отображена на карте</span>
-					<span class="second_data_locator_description">https://www.iqos.ru/gde-kupit/</span>
+					<span class="second_data_locator_description"><a href="https://www.iqos.ru/gde-kupit/" target="_blank">https://www.iqos.ru/gde-kupit/</a></span>
 					<input type="checkbox" name="locator" id="locator_check">
 				</div>
 			</div>
@@ -377,11 +378,11 @@
 		<nav class="bottom_nav">
 			<button class="bottom_nav_item_main">Общее</button>
 			<button class="bottom_nav_item_al">Activation Leader</button>
-			<button class="bottom_nav_item_matrix">Матрица</button>
-			<button class="bottom_nav_item_in">На входе</button>
-			<button class="bottom_nav_item_stock">Стоки</button>
-			<button class="bottom_nav_item_price">Цены</button>
-			<button class="bottom_nav_item_counters">На кассы</button>
+			<button class="bottom_nav_item_matrix" disabled="disabled">Матрица</button>
+			<button class="bottom_nav_item_in" disabled="disabled">На входе</button>
+			<button class="bottom_nav_item_stock" disabled="disabled">Стоки</button>
+			<button class="bottom_nav_item_price" disabled="disabled">Цены</button>
+			<button class="bottom_nav_item_counters" disabled="disabled">На кассы</button>
 		</nav>
 	</footer>
 </body>

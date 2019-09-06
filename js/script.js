@@ -101,6 +101,43 @@ $(function(){
 		}
 	});
 
+	/* Назад и вперёд по листам */
+
+	$('.top_back').on('click',cardSwitchBack);
+	$('.top_forward').on('click',cardSwitchForward);
+
+	function cardSwitchBack () {
+		var card = $('.data:visible').attr('id');
+		console.log('Текущий лист ' + card);
+		if (card === 'first') {
+			false;
+		}
+		else if (card === 'second') {
+			$('.second').hide(50);
+			$('.first').show(50);
+		}
+		else {
+			console.log('Другой лист');
+		}
+	}
+
+	function cardSwitchForward () {
+		var card = $('.data:visible').attr('id');
+		console.log('Текущий лист ' + card);
+		if (card === 'first' && $('.data_activation_data').is(':checked')) {
+			$('.first').hide(50);
+			$('.second').show(50);
+		}
+		else if (card === 'first') {
+			false;
+			/*$('.first').hide(50);
+			$('.third').show(50);*/
+		}
+		else {
+			console.log('Другой лист');
+		}
+	}
+
 	/* Список участников */
 
 	$('.second_data_member_table').not(':first').css('display','none');
@@ -218,5 +255,5 @@ $(function(){
 	$('.fp').on('focusout',function() {
 		$(this).attr('placeholder','Пред.месяц без скидки');
 	});
-	
+
 });
