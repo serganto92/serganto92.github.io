@@ -299,6 +299,7 @@ $(function(){
 			for (var i = 0; i < matrix.length(); i++) {
 				$('.sku_list').append('<tr><td>' + this + '</td></tr>')
 			}
+
 			
 		}
 });
