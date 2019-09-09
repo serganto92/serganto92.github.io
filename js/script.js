@@ -280,25 +280,16 @@ $(function(){
 
 	/* Работа с матрицей */
 
-	$('.data_third_matrix tr td input').on('click',function(){
-		$(this).parent().prev('td').attr('class','disable');
-	});
+		/* Забираем не отмеченные SKU */
 
-	function matrixTake () {
 		var matrix = [];
-		$('.data_third_matrix tr').each(function(){
-			var matrix_row = [];
-			$(this).find('td[class="disable"]:nth-of-type(odd)').each(function(){
-				if ($(this).text() !== null) {
-				matrix_row.push($(this).text());
+		$('.matrix_test').on('click',function(){
+			$('.data_third_matrix tr td input').each(function(){
+				if($(this).prop('checked') == false) {
+					matrix.push($(this).parent().prev('td').text())
 				}
-				
 			});
-			matrix.push(matrix_row);
+			console.table(matrix);
 		});
-		console.table(matrix);
-	};
-
-	$('.matrix_test').on('click',matrixTake);
 
 });
