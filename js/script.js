@@ -292,4 +292,13 @@ $(function(){
 			console.table(matrix);
 		});
 
+		/* Создаём таблицу из массива */
+
+		function createSkuList () {
+
+			for (var i = 0; i < matrix.length(); i++) {
+				$('.sku_list').append('<tr><td>' + this + '</td></tr>')
+			}
+			
+		}
 });
