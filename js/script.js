@@ -101,6 +101,17 @@ $(function(){
 		}
 	});
 
+	$('.bottom_nav_item_matrix').on('click', function(){
+		if ($('.third').css('display') == 'block') {
+			false
+		}
+		else {
+		$('.data:visible').hide(50);
+		$('.top_logo_title').html('Матрица');
+		$('.third').show(50);
+		}
+	});
+
 	/* Назад и вперёд по листам */
 
 	$('.top_back').on('click',cardSwitchBack);
@@ -116,6 +127,14 @@ $(function(){
 			$('.second').hide(50);
 			$('.first').show(50);
 		}
+		else if (card === 'third' && $('.data_activation_data').is(':checked')) {
+			$('.third').hide(50);
+			$('.second').show(50);
+		}
+		else if (card === 'third') {
+			$('.third').hide(50);
+			$('.first').show(50);
+		}
 		else {
 			console.log('Другой лист');
 		}
@@ -129,9 +148,12 @@ $(function(){
 			$('.second').show(50);
 		}
 		else if (card === 'first') {
-			false;
-			/*$('.first').hide(50);
-			$('.third').show(50);*/
+			$('.first').hide(50);
+			$('.third').show(50);
+		}
+		else if (card === 'second') {
+			$('.second').hide(50);
+			$('.third').show(50);
 		}
 		else {
 			console.log('Другой лист');
@@ -171,7 +193,7 @@ $(function(){
 			$(this).closest('.second_data_member_header_vision').toggleClass('rotate')
 		}
 		else {
-			false
+			false;
 		}
 	}
 
@@ -184,7 +206,7 @@ $(function(){
 			$(this).parent().parent().parent().remove();
 		}
 		else {
-			false
+			false;
 		}
 	});
 
@@ -255,5 +277,27 @@ $(function(){
 	$('.fp').on('focusout',function() {
 		$(this).attr('placeholder','Пред.месяц без скидки');
 	});
+
+	/* Работа с матрицей */
+
+	$('.data_third_matrix tr td input').on('click',function(){
+		$(this).parent().prev('td').attr('class','disable');
+	});
+
+	function matrixTake () {
+		var matrix = [];
+		$('.data_third_matrix tr').each(function(){
+			var matrix_row = [];
+			$(this).find('td[class="disable"]:nth-of-type(odd)').each(function(){
+				if ($(this).text() !== null) {
+				matrix_row.push($(this).text());
+				}
+			});
+			matrix.push(matrix_row);
+		});
+		console.table(matrix);
+	};
+
+	$('.matrix_test').on('click',matrixTake);
 
 });

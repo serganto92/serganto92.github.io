@@ -671,3 +671,42 @@ div.second_data_member_header_description.new {
 	width: 20px;
 }
 
+/* Вкладка матрица */
+
+.third {
+	display: none;
+}
+
+.third_pos {
+	background-color:grey;
+	margin:0;
+	height: 40px;
+	padding: 10px 0 10px 20px;
+	box-sizing: border-box;
+}
+
+.data_third_matrix {
+	table-layout: fixed;
+	border-collapse: collapse;
+	max-width: 80%;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.data_third_matrix th:first-of-type {
+	min-width: 100px;
+}
+
+.data_third_matrix th:last-of-type {
+	max-width: 10%;
+}
+
+.data_third_matrix td {
+	height: 30px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.data_third_matrix td:nth-of-type(2n) {
+	text-align: center;
+}
