@@ -292,6 +292,7 @@ $(function(){
 				if ($(this).text() !== null) {
 				matrix_row.push($(this).text());
 				}
+				
 			});
 			matrix.push(matrix_row);
 		});
