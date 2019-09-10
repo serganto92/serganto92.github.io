@@ -214,14 +214,17 @@ $(function(){
 	
 	$('.availability').on('click',function(){
 		if ($(this).is(':checked') === false && $('.repair').is(':checked') && $('.charge').is(':checked')) {
-			$('.charge').attr('disabled','disabled');
-			$('.repair').attr('disabled','disabled');
+			$('.charge').trigger('click').attr('disabled','disabled');
+			$('.repair').trigger('click').attr('disabled','disabled');
 		}
 		else if ($(this).is(':checked') === false && $('.repair').is(':checked') && ($('.charge').is(':checked') === false)) {
-			$('.repair').attr('disabled','disabled');
+			$('.repair').trigger('click').attr('disabled','disabled');
 		}
-		else if ($(this).is(':checked') === false) {	
-			$('.repair,.charge').attr('disabled','disabled');
+		else if ($(this).is(':checked') === false && $('.repair').is(':checked') && ($('.charge').is(':checked'))) {	
+			$('.repair,.charge').trigger('click').attr('disabled','disabled');
+		}
+		else if ($(this).is(':checked') === false && $('repair').is('checked') === false) {
+			$('.repair').attr('disabled','disabled');
 		}
 		else {
 			$('.repair').removeAttr('disabled');
@@ -241,7 +244,7 @@ $(function(){
 		else {
 			console.log('Остальное');
 		}
-		
+
 	});
 
 	/* Проверка отметок LAS */
