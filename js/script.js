@@ -229,6 +229,7 @@ $(function(){
 		else {
 			$('.repair').removeAttr('disabled');
 		}
+		
 	});
 
 	$('.repair').on('click', function(){
