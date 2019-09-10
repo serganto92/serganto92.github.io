@@ -710,3 +710,11 @@ div.second_data_member_header_description.new {
 .data_third_matrix td:nth-of-type(2n) {
 	text-align: center;
 }
+
+.data_firth {
+	display: none;
+}
+
+.data_five {
+	display: none;
+}

@@ -289,7 +289,6 @@ $(function(){
 					matrix.push($(this).parent().prev('td').text())
 				}
 			});
-			console.table(matrix);
 			for (var i = 0; i < matrix.length ; i++) {
 				$('.sku_list').append('<tr><td>' + matrix[i] + '</td></tr>')
 			}
