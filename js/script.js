@@ -214,11 +214,14 @@ $(function(){
 	
 	$('.availability').on('click',function(){
 		if ($(this).is(':checked') === false && $('.repair').is(':checked') && $('.charge').is(':checked')) {
-			$('.charge').trigger('click').attr('disabled','disabled');
-			$('.repair').trigger('click').attr('disabled','disabled');
+			$('.charge').attr('disabled','disabled');
+			$('.repair').attr('disabled','disabled');
 		}
 		else if ($(this).is(':checked') === false && $('.repair').is(':checked') && ($('.charge').is(':checked') === false)) {
-			$('.repair').trigger('click').attr('disabled','disabled');
+			$('.repair').attr('disabled','disabled');
+		}
+		else if ($(this).is(':checked') === false) {	
+			$('.repair,.charge').attr('disabled','disabled');
 		}
 		else {
 			$('.repair').removeAttr('disabled');
