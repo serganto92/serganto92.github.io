@@ -6,6 +6,7 @@ $(function(){
 	var html_h = $('html').height();
 	var scale = win_h / html_h;
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
+	var counterNum = $('.data_counters_data').val();
 
 	$('body').css('transform','scale('+scale+')' + 'translateY(' + '-' + translate + 'px)');
 
@@ -109,6 +110,17 @@ $(function(){
 		$('.data:visible').hide(50);
 		$('.top_logo_title').html('Матрица');
 		$('.third').show(50);
+		}
+	});
+
+	$('.bottom_nav_item_in').on('click', function(){
+		if ($('.firth').css('display') == 'block') {
+			false
+		}
+		else {
+		$('.data:visible').hide(50);
+		$('.top_logo_title').html('На входе');
+		$('.firth').show(50);
 		}
 	});
 
@@ -229,7 +241,6 @@ $(function(){
 		else {
 			$('.repair').removeAttr('disabled');
 		}
-		
 	});
 
 	$('.repair').on('click', function(){
@@ -301,4 +312,17 @@ $(function(){
 				$('.sku_list').append('<tr><td>' + matrix[i] + '</td></tr>')
 			}
 		});
+
+	/* Создаём таблицу соответствующую кол-ву касс "На входе" */
+
+	function countersList () {
+			var counter = 1;
+			console.log(counterNum);
+			for (var i = 0; i < counterNum; i++ ) {
+				$('.data_firth_counters').append('<tr><td>' +  counter[i] + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td></td><td></td><td></td></tr>');
+				counter + 1;
+			}
+	}
+
+	$('#test').on('click',countersList);
 });

@@ -254,7 +254,7 @@ input[type="text"]:focus {
 .data_comment_data {
 	background-color: #ececec;
 	border:none;
-	border-bottom: 1px solid .d5d4d4;
+	border-bottom: 2px solid #d5d4d4;
 }
 
 .data_photo_description {
@@ -711,10 +711,10 @@ div.second_data_member_header_description.new {
 	text-align: center;
 }
 
-.data_firth {
+.firth {
 	display: none;
 }
 
-.data_five {
+.five {
 	display: none;
 }
