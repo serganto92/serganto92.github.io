@@ -7,6 +7,9 @@ $(function(){
 	var scale = win_h / html_h;
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
 	var counterNum = $('.data_counters_data').val();
+	$('.c_test').on('click', function() {
+		console.log(counterNum);
+	});
 
 	$('body').css('transform','scale('+scale+')' + 'translateY(' + '-' + translate + 'px)');
 
@@ -316,11 +319,9 @@ $(function(){
 	/* Создаём таблицу соответствующую кол-ву касс "На входе" */
 
 	function countersList () {
-			var counter = 1;
 			console.log(counterNum);
 			for (var i = 0; i < counterNum; i++ ) {
-				$('.data_firth_counters').append('<tr><td>' +  counter[i] + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td></td><td></td><td></td></tr>');
-				counter + 1;
+				$('.data_firth_counters').append('<tr><td>' +  i + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td></td><td></td><td></td></tr>');
 			}
 	}
 
