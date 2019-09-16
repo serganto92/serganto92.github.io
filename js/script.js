@@ -7,6 +7,7 @@ $(function(){
 	var scale = win_h / html_h;
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
 	var counterNum = $('.data_counters_data').val();
+	
 	$('.c_test').on('click', function() {
 		console.log(counterNum);
 	});
