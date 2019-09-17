@@ -37,6 +37,14 @@ header {
 	outline: 2px solid red;
 }
 
+.show {
+	display: inline-block;
+}
+
+button[class$="test"] {
+	display: none;
+}
+
 /* Сервисная строка */
 
 .notifications {                          

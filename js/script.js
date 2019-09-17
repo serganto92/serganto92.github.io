@@ -6,8 +6,8 @@ $(function(){
 	var html_h = $('html').height();
 	var scale = win_h / html_h;
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
-	var counterNum = $('.data_counters_data').val();
-	
+	var counterNum = 0;
+
 	$('.c_test').on('click', function() {
 		console.log(counterNum);
 	});
@@ -80,6 +80,10 @@ $(function(){
 			$('.bottom_nav_item_al').toggleClass('changes');
 			$(this).text('Отобразить изменения');
 		}
+	});
+
+	$('.service_nav li:last-of-type').on('click',function () {
+		$('button[class *= test]').toggleClass('show');
 	});
 
 	/* Переключение между листами */
@@ -320,11 +324,11 @@ $(function(){
 	/* Создаём таблицу соответствующую кол-ву касс "На входе" */
 
 	function countersList () {
-			console.log(counterNum);
+			counterNum = $('.data_counters_data').val();
 			for (var i = 0; i < counterNum; i++ ) {
-				$('.data_firth_counters').append('<tr><td>' +  i + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td></td><td></td><td></td></tr>');
+				$('.data_firth_counters').append('<tr><td>' +  i + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td><input type="checkbox" class="data_firth_counters_planogram"></td><td><input type="checkbox" class="data_firth_counters_price"></td><td>Заполнить</td></tr>');
 			}
 	}
 
-	$('#test').on('click',countersList);
+	$('.counterList_test').on('click',countersList);
 });
