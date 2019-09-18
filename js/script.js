@@ -8,10 +8,6 @@ $(function(){
 	var translate = (html_h - (html_h * scale)) / (scale * 2);
 	var counterNum = 0;
 
-	$('.c_test').on('click', function() {
-		console.log(counterNum);
-	});
-
 	$('body').css('transform','scale('+scale+')' + 'translateY(' + '-' + translate + 'px)');
 
 	/* Activation leader */
@@ -128,6 +124,7 @@ $(function(){
 		else {
 		$('.data:visible').hide(50);
 		$('.top_logo_title').html('На входе');
+		countersList ();
 		$('.firth').show(50);
 		}
 	});
@@ -155,6 +152,10 @@ $(function(){
 			$('.third').hide(50);
 			$('.first').show(50);
 		}
+		else if (card === 'firth') {
+			$('.firth').hide(50);
+			$('.third').show(50);
+		}
 		else {
 			console.log('Другой лист');
 		}
@@ -174,6 +175,11 @@ $(function(){
 		else if (card === 'second') {
 			$('.second').hide(50);
 			$('.third').show(50);
+		}
+		else if (card === 'third') {
+			$('.third').hide(50);
+			countersList ();
+			$('.firth').show(50);
 		}
 		else {
 			console.log('Другой лист');
@@ -325,10 +331,16 @@ $(function(){
 
 	function countersList () {
 			counterNum = $('.data_counters_data').val();
+			var counter = 0;
+			var itemListControl = $('.data_firth_counters tr').length;
+			if (itemListControl < 2) {
 			for (var i = 0; i < counterNum; i++ ) {
-				$('.data_firth_counters').append('<tr><td>' +  i + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td><input type="checkbox" class="data_firth_counters_planogram"></td><td><input type="checkbox" class="data_firth_counters_price"></td><td>Заполнить</td></tr>');
+				counter++;
+				$('.data_firth_counters').append('<tr><td>' +  counter + '</td><td><input type="checkbox" class="data_firth_counters_active"></td><td><input type="checkbox" class="data_firth_counters_planogram"></td><td><input type="checkbox" class="data_firth_counters_price"></td><td>Заполнить</td></tr>');
+			}
+			}
+			else {
+				false;
 			}
 	}
-
-	$('.counterList_test').on('click',countersList);
 });

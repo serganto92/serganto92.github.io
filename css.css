@@ -45,6 +45,14 @@ button[class$="test"] {
 	display: none;
 }
 
+.firth {
+	display: none;
+}
+
+.five {
+	display: none;
+}
+
 /* Сервисная строка */
 
 .notifications {                          
@@ -719,10 +727,25 @@ div.second_data_member_header_description.new {
 	text-align: center;
 }
 
-.firth {
-	display: none;
+/* Таблица на входе */
+
+.data_firth_counters {
+	border-collapse: collapse;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
-.five {
-	display: none;
+.data_firth_counters td,.data_firth_counters th {
+	padding: 5px 8px;
+	text-align: center;
+	min-width: 110px;
 }
+
+.data_firth_counters td {
+	border: 1px solid grey;
+}
+
+.data_firth_counters td:first-of-type,.data_firth_counters th:first-of-type {
+	min-width: 0;
+}
+
