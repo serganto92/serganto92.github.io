@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<yml_catalog date="2022-03-21 12:29">
+<yml_catalog date="2022-03-21 16:31">
   <shop>
     <name>Company Name</name>
     <company>Company Name</company>
@@ -3392,6 +3392,17 @@
         <picture>http://pim.rev.ru:8080/asset/4850</picture>
         <barcode>4008297265856</barcode>
       </offer>
+      <offer id="1736">
+        <name>Рамка на 3 поста серия Palazzo, слоновая кость, düwi</name>
+        <price>76.687</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>217</categoryId>
+        <count>15</count>
+        <oldprice>69.0183</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4821</picture>
+        <picture>http://pim.rev.ru:8080/asset/4820</picture>
+        <barcode>4008297264910</barcode>
+      </offer>
       <offer id="1641">
         <name>Розетка о/п 1-местнаяб/з серия Basis, белый, düwi</name>
         <price>91.988</price>
@@ -3413,6 +3424,17 @@
         <picture>http://pim.rev.ru:8080/asset/4594</picture>
         <picture>http://pim.rev.ru:8080/asset/4593</picture>
         <barcode>4008297264019</barcode>
+      </offer>
+      <offer id="1643">
+        <name>Розетка о/п 2-местнаяб/з серия Basis, белый, düwi</name>
+        <price>127.543</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>114.7887</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4596</picture>
+        <picture>http://pim.rev.ru:8080/asset/4595</picture>
+        <barcode>4008297264026</barcode>
       </offer>
       <offer id="1644">
         <name>Розетка о/п 2-местнаяс з/к серия Basis, белый, düwi</name>
@@ -3447,6 +3469,17 @@
         <picture>http://pim.rev.ru:8080/asset/4693</picture>
         <barcode>4008297264590</barcode>
       </offer>
+      <offer id="1647">
+        <name>Розетка с/п 2-местнаяб/з серия Basis, белый, düwi</name>
+        <price>152.464</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>137.2176</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4696</picture>
+        <picture>http://pim.rev.ru:8080/asset/4695</picture>
+        <barcode>4008297264606</barcode>
+      </offer>
       <offer id="1648">
         <name>Розетка с/п 2-местнаяс з/к серия Basis, белый, düwi</name>
         <price>212.381</price>
@@ -3468,6 +3501,16 @@
         <picture>http://pim.rev.ru:8080/asset/4603</picture>
         <barcode>4008297264064</barcode>
       </offer>
+      <offer id="1650">
+        <name>Розетка о/п 2-местнаяб/з серия Palazzo, слоновая кость, düwi</name>
+        <price>185.523</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>166.9707</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4609</picture>
+        <barcode>4008297264101</barcode>
+      </offer>
       <offer id="1651">
         <name>Розетка о/п 3-местнаяб/з серия Palazzo, слоновая кость, düwi</name>
         <price>352.677</price>
@@ -3478,6 +3521,16 @@
         <picture>http://pim.rev.ru:8080/asset/4611</picture>
         <barcode>4008297264125</barcode>
       </offer>
+      <offer id="1652">
+        <name>Розетка о/п 4-местнаяб/з серия Palazzo, слоновая кость, düwi</name>
+        <price>518.362</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>466.5258</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4614</picture>
+        <barcode>4008297264149</barcode>
+      </offer>
       <offer id="1653">
         <name>Розетка о/п 1-местная с крышкойб/з серия Palazzo, слоновая кость, düwi</name>
         <price>222.43</price>
@@ -3487,6 +3540,16 @@
         <oldprice>200.187</oldprice>
         <picture>http://pim.rev.ru:8080/asset/4617</picture>
         <barcode>4008297264170</barcode>
+      </offer>
+      <offer id="1654">
+        <name>Розетка о/п 1-местнаяс з/к серия Palazzo, слоновая кость, düwi</name>
+        <price>158.912</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>143.0208</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4604</picture>
+        <barcode>4008297264071</barcode>
       </offer>
       <offer id="1655">
         <name>Розетка о/п 2-местнаяс з/к серия Palazzo, слоновая кость, düwi</name>
@@ -3520,6 +3583,16 @@
         <picture>http://pim.rev.ru:8080/asset/4615</picture>
         <barcode>4008297264156</barcode>
       </offer>
+      <offer id="1658">
+        <name>Розетка о/п 1-местная с крышкойс з/к серия Palazzo, слоновая кость, düwi</name>
+        <price>254.8</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>229.32</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4618</picture>
+        <barcode>4008297264187</barcode>
+      </offer>
       <offer id="1659">
         <name>Розетка с/п 1-местная б/з серия Palazzo, белый, düwi</name>
         <price>192.478</price>
@@ -3530,6 +3603,17 @@
         <picture>http://pim.rev.ru:8080/asset/4704</picture>
         <picture>http://pim.rev.ru:8080/asset/4703</picture>
         <barcode>4008297264644</barcode>
+      </offer>
+      <offer id="1660">
+        <name>Розетка с/п 2-местная б/з серия Palazzo, белый, düwi</name>
+        <price>199.056</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>179.1504</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4708</picture>
+        <picture>http://pim.rev.ru:8080/asset/4707</picture>
+        <barcode>4008297264668</barcode>
       </offer>
       <offer id="1661">
         <name>Розетка с/п 1-местная с з/к серия Palazzo, белый, düwi</name>
@@ -3564,6 +3648,17 @@
         <picture>http://pim.rev.ru:8080/asset/4715</picture>
         <barcode>4008297264835</barcode>
       </offer>
+      <offer id="1664">
+        <name>Розетка с/п 2-местная б/з серия Palazzo, слоновая кость, düwi</name>
+        <price>199.056</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>179.1504</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4720</picture>
+        <picture>http://pim.rev.ru:8080/asset/4719</picture>
+        <barcode>4008297264859</barcode>
+      </offer>
       <offer id="1665">
         <name>Розетка с/п 1-местная с з/к серия Palazzo, слоновая кость, düwi</name>
         <price>225.901</price>
@@ -3586,6 +3681,27 @@
         <picture>http://pim.rev.ru:8080/asset/4721</picture>
         <barcode>4008297264866</barcode>
       </offer>
+      <offer id="1671">
+        <name>Розетка о/п 1-местнаяб/з, серия Palazzo Vintage, белое золото патина, düwi</name>
+        <price>241.085</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>216.9765</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4647</picture>
+        <picture>http://pim.rev.ru:8080/asset/4646</picture>
+        <barcode>4008297264323</barcode>
+      </offer>
+      <offer id="1672">
+        <name>Розетка о/п 1-местная с крышкой IP54б/з, серия Palazzo Vintage, белое золото патина, düwi</name>
+        <price>283.569</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>255.2121</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4658</picture>
+        <barcode>4008297264439</barcode>
+      </offer>
       <offer id="1673">
         <name>Розетка о/п 2-местнаяб/з, серия Palazzo Vintage, белое золото патина, düwi</name>
         <price>267.54</price>
@@ -3595,6 +3711,16 @@
         <oldprice>240.786</oldprice>
         <picture>http://pim.rev.ru:8080/asset/4650</picture>
         <barcode>4008297264361</barcode>
+      </offer>
+      <offer id="1674">
+        <name>Розетка о/п 3-местнаяб/з, серия Palazzo Vintage, белое золото патина, düwi</name>
+        <price>494.819</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>445.3371</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4652</picture>
+        <barcode>4008297264385</barcode>
       </offer>
       <offer id="1675">
         <name>Розетка о/п 4-местнаяб/з, серия Palazzo Vintage, белое золото патина, düwi</name>
@@ -3624,6 +3750,16 @@
         <oldprice>292.4064</oldprice>
         <picture>http://pim.rev.ru:8080/asset/4659</picture>
         <barcode>4008297264446</barcode>
+      </offer>
+      <offer id="1678">
+        <name>Розетка о/п 2-местнаяс з/к, серия Palazzo Vintage, белое золото патина, düwi</name>
+        <price>302.874</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>272.5866</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4651</picture>
+        <barcode>4008297264378</barcode>
       </offer>
       <offer id="1679">
         <name>Розетка о/п 3-местнаяс з/к, серия Palazzo Vintage, белое золото патина, düwi</name>
@@ -3656,6 +3792,17 @@
         <picture>http://pim.rev.ru:8080/asset/4778</picture>
         <picture>http://pim.rev.ru:8080/asset/4777</picture>
         <barcode>4008297265771</barcode>
+      </offer>
+      <offer id="1702">
+        <name>Розетка с/п 2-местная б/з серия Palazzo Vintage, белое золото, düwi</name>
+        <price>251.329</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>214</categoryId>
+        <count>15</count>
+        <oldprice>226.1961</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4782</picture>
+        <picture>http://pim.rev.ru:8080/asset/4781</picture>
+        <barcode>4008297265795</barcode>
       </offer>
       <offer id="1703">
         <name>Розетка с/п 1-местная с з/к серия Palazzo Vintage, белое золото, düwi</name>
