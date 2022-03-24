@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<yml_catalog date="2022-03-21 17:47">
+<yml_catalog date="2022-03-24 08:00">
   <shop>
     <name>Company Name</name>
     <company>Company Name</company>
@@ -219,8 +219,7 @@
         <categoryId>162</categoryId>
         <count>10</count>
         <oldprice>1001.3094</oldprice>
-        <picture>http://pim.rev.ru:8080/asset/3634</picture>
-        <picture>http://pim.rev.ru:8080/asset/3633</picture>
+        <picture>http://pim.rev.ru:8080/28528_1.jpg</picture>
         <barcode>4008297285281</barcode>
       </offer>
       <offer id="1065">
@@ -319,6 +318,17 @@
         <picture>http://pim.rev.ru:8080/asset/3578</picture>
         <picture>http://pim.rev.ru:8080/asset/3579</picture>
         <barcode>4008297285045</barcode>
+      </offer>
+      <offer id="1074">
+        <name>Датчик движения DD-6 3xdetector 360°Настенный/угловой. Цвет: белый. IP44,  REV</name>
+        <price>2074.371</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>156</categoryId>
+        <count>15</count>
+        <oldprice>1866.9339</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/3576</picture>
+        <picture>http://pim.rev.ru:8080/asset/3577</picture>
+        <barcode>4008297285038</barcode>
       </offer>
       <offer id="1075">
         <name>Датчик движения DD-03 настенный 180°800Вт, 10-900с, 12м, 3-2000Лк, IP44, белый, düwi</name>
@@ -2157,6 +2167,19 @@
         <picture>http://pim.rev.ru:8080/asset/1977</picture>
         <barcode>4008297246039</barcode>
       </offer>
+      <offer id="484">
+        <name>Патрон E27пластиковый с подвесом 1 м, белый, REV</name>
+        <price>445.588</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>111</categoryId>
+        <vendor>Rev</vendor>
+        <count>18</count>
+        <oldprice>401.0292</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/1997</picture>
+        <picture>http://pim.rev.ru:8080/asset/1995</picture>
+        <picture>http://pim.rev.ru:8080/asset/1996</picture>
+        <barcode>4008297246428</barcode>
+      </offer>
       <offer id="485">
         <name>Патрон E27пластиковый с подвесом 1 м, желтый, REV</name>
         <price>445.588</price>
@@ -2169,6 +2192,19 @@
         <picture>http://pim.rev.ru:8080/asset/1998</picture>
         <picture>http://pim.rev.ru:8080/asset/1999</picture>
         <barcode>4008297246435</barcode>
+      </offer>
+      <offer id="486">
+        <name>Патрон E27пластиковый с подвесом 1 м, зеленый, REV</name>
+        <price>445.588</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>111</categoryId>
+        <vendor>Rev</vendor>
+        <count>15</count>
+        <oldprice>401.0292</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/2003</picture>
+        <picture>http://pim.rev.ru:8080/asset/2001</picture>
+        <picture>http://pim.rev.ru:8080/asset/2002</picture>
+        <barcode>4008297246442</barcode>
       </offer>
       <offer id="487">
         <name>Патрон E27пластиковый с подвесом 1 м, красный, REV</name>
@@ -7052,6 +7088,16 @@
         <picture>http://pim.rev.ru:8080/asset/4248</picture>
         <barcode>4008297266105</barcode>
       </offer>
+      <offer id="1391">
+        <name>Клеммы соединительные монтажные с рычажком прозрачные СМК 223-413, 2,5мм2, 5 шт., duwi</name>
+        <price>226.369</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>193</categoryId>
+        <count>60</count>
+        <oldprice>203.7321</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/4251</picture>
+        <barcode>4008297266136</barcode>
+      </offer>
       <offer id="1392">
         <name>Клеммы соединительные монтажные с рычажком прозрачные СМК 223-414, 2,5мм2, 5 шт., duwi</name>
         <price>267.709</price>
@@ -8527,6 +8573,17 @@
         <oldprice>161.5536</oldprice>
         <picture>http://pim.rev.ru:8080/asset/2699</picture>
         <barcode>4008297289494</barcode>
+      </offer>
+      <offer id="697">
+        <name>Спот встраиваемый GX53, без лампызолото, REV</name>
+        <price>206.362</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>134</categoryId>
+        <vendor>REV</vendor>
+        <count>15</count>
+        <oldprice>185.7258</oldprice>
+        <picture>http://pim.rev.ru:8080/asset/2700</picture>
+        <barcode>4008297289500</barcode>
       </offer>
       <offer id="698">
         <name>Спот встраиваемый GX53, без лампыхром, REV</name>
